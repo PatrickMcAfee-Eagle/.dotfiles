@@ -1,0 +1,7 @@
+
+set_vault() {
+  export VAULT_ADDR='https://inno-vault.eagleinvsys.com'
+  echo "Enter Vault Token: "
+  read -s VAULT_TOKEN
+  export VAULT_TOKEN=${VAULT_TOKEN:-NoTokenSet}
+}
