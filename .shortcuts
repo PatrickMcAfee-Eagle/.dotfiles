@@ -15,12 +15,12 @@ ssh_other()
   ssh -i ~/.ssh/${1} ${2}@${3}
 }
 
-ssh-ans()
+sshans()
 {
   ssh_other "ansible" "ansible" ${1}
 }
 
-ssh_az()
+sshaz()
 {
   ssh_other "azure_rsa" "ansible" ${1}
 }
