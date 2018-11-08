@@ -3,7 +3,7 @@ ssh-add ~/.ssh/ansible 2>/dev/null
 ssh-add ~/.ssh/azure_rsa 2>/dev/null
 
 set_vault() {
-  export VAULT_ADDR='https://inno-vault.eagleinvsys.com'
+  export VAULT_ADDR=''
   echo "Enter Vault Token: "
   read -s VAULT_TOKEN
   export VAULT_TOKEN=${VAULT_TOKEN:-NoTokenSet}
